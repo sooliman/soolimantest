@@ -197,3 +197,4 @@ fruits = {'kiwi':      [1, 3, 24, 26, 47, 49, 68, 70, 91, 93],
 for fruit, numbers in fruits.items():
     if 10 in numbers:
         print(fruit)
+        j
