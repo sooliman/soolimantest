@@ -138,6 +138,28 @@ def to_industrial(time):
     return round(time/60, 2)
 
 
+y = 27
+i = []
+while 1 < y:
+
+    if y % 2 == 0:
+
+        y /= 2
+        i.append(y)
+
+    elif y % 2 != 0:
+        y = y*3+1
+        i.append(y)
+print(len(i))
+
+
+def uni_total(s):
+    # your code here
+    return sum((ord(s) for s in s)) or 0
+
+
+print(uni_total(""))
+
 
 def describe_age(a):
     return f"You're a(n) {a<13 and 'kid' or a<18 and 'teenager' or a<65 and 'adult' or 'elderly'}"
